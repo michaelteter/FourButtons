@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FourButtons" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,7 +17,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMw-pT-9lf">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZK-Ep-2vO" userLabel="btnFacebook">
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="PhQ-Kl-vf8"/>
+                                            <constraint firstAttribute="height" constant="90" id="kLg-Ge-2lS"/>
+                                        </constraints>
+                                        <state key="normal" title="facebook"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk2-vg-yfW" userLabel="btnGoogle">
+                                        <color key="backgroundColor" red="1" green="0.60838976420000002" blue="0.63709632189999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="GhI-2K-Vor"/>
+                                            <constraint firstAttribute="height" constant="90" id="Ois-cW-nEt"/>
+                                        </constraints>
+                                        <state key="normal" title="Google+"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD3-fu-5NZ" userLabel="btnEmail">
+                                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="WPz-q1-VsC"/>
+                                            <constraint firstAttribute="width" constant="90" id="yso-w4-KAO"/>
+                                        </constraints>
+                                        <state key="normal" title="email"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wg-Ey-5lC" userLabel="btnVK">
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="TyQ-c3-jEm"/>
+                                            <constraint firstAttribute="height" constant="90" id="u5e-mO-baA"/>
+                                        </constraints>
+                                        <state key="normal" title="VK"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="DWb-WZ-McN"/>
+                                    <constraint firstItem="mZK-Ep-2vO" firstAttribute="top" secondItem="BMw-pT-9lf" secondAttribute="top" id="E30-xF-QRt"/>
+                                    <constraint firstAttribute="width" constant="180" id="WGS-p6-X9Z"/>
+                                    <constraint firstItem="mZK-Ep-2vO" firstAttribute="leading" secondItem="BMw-pT-9lf" secondAttribute="leading" id="XMg-yr-9jN"/>
+                                    <constraint firstAttribute="trailing" secondItem="WD3-fu-5NZ" secondAttribute="trailing" id="Yl8-dB-fzO"/>
+                                    <constraint firstItem="7Wg-Ey-5lC" firstAttribute="leading" secondItem="BMw-pT-9lf" secondAttribute="leading" id="baT-Qj-Gkw"/>
+                                    <constraint firstItem="Hk2-vg-yfW" firstAttribute="top" secondItem="BMw-pT-9lf" secondAttribute="top" id="eiM-G1-Gdi"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Wg-Ey-5lC" secondAttribute="bottom" id="f1i-XS-qms"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hk2-vg-yfW" secondAttribute="trailing" id="plT-Yf-wRI"/>
+                                    <constraint firstAttribute="bottom" secondItem="WD3-fu-5NZ" secondAttribute="bottom" id="sxC-tr-Lr3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BMw-pT-9lf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YNZ-Nb-jhR"/>
+                            <constraint firstItem="BMw-pT-9lf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z4u-kb-gBK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
